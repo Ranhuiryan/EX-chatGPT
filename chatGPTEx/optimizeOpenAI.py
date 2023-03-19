@@ -35,7 +35,7 @@ class ExChatGPT:
         engine = None,
         proxy = None,
         api_proxy = None,
-        max_tokens: int = 3000,
+        max_tokens: int = 10000,
         temperature: float = 0.5,
         top_p: float = 1.0,
         reply_count: int = 1,
