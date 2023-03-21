@@ -40,7 +40,7 @@ async function TTS(text) {
     const ChineseSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-CN">
 <voice name="zh-CN-XiaoxiaoNeural">
     <s /><mstts:express-as style="affectionate">
-    <prosody rate="+5.00%" pitch="+15.00%">
+    <prosody rate="+10.00%" pitch="+15.00%">
         ${text}
     </prosody>
     </mstts:express-as><s />
