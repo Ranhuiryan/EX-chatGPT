@@ -31,8 +31,8 @@ async function TTS(text) {
         synthesizer = new SpeechSDK.SpeechSynthesizer(speechConfig);
       }
     const EnglishSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
-<voice name="en-US-JennyNeural">
-    <prosody rate="+40.00%">
+<voice name="en-US-AshleyNeural">
+    <prosody rate="+25.00%">
         ${text}
     </prosody>
 </voice>
