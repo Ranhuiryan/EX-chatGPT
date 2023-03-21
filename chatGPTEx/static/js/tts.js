@@ -32,7 +32,7 @@ async function TTS(text) {
       }
     const EnglishSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
 <voice name="en-US-AshleyNeural">
-    <prosody pitch="+25.00%">
+    <prosody rate="+15.00%" pitch="+25.00%">
         ${text}
     </prosody>
 </voice>
