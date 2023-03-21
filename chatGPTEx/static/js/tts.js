@@ -32,16 +32,20 @@ async function TTS(text) {
       }
     const EnglishSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
 <voice name="en-US-AshleyNeural">
-    <prosody rate="+25.00%">
+    <prosody rate="+15.00%" pitch="+25.00%">
         ${text}
     </prosody>
 </voice>
 </speak>`;
     const ChineseSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-CN">
-<voice name="zh-CN-XiaoshuangNeural">
-    <prosody rate="+55.00%">
-        ${text}
-    </prosody>
+<voice name="zh-CN-XiaoxiaoNeural">
+    <s />
+        <mstts:express-as style="affectionate">
+        <prosody rate="+15.00%" pitch="+15.00%">
+            ${text}
+        </prosody>
+        </mstts:express-as>
+    <s />
 </voice>
 </speak>`;
     var ssml;
